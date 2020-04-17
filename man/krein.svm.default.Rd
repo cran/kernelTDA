@@ -4,9 +4,17 @@
 \alias{krein.svm.default}
 \title{Krein Support Vector Machine}
 \usage{
-\method{krein.svm}{default}(kernelmat = NULL, y = NULL, cost = 1,
-  class.weights = NULL, cross = 0, probability = FALSE,
-  fitted = TRUE, subset, ...)
+\method{krein.svm}{default}(
+  kernelmat = NULL,
+  y = NULL,
+  cost = 1,
+  class.weights = NULL,
+  cross = 0,
+  probability = FALSE,
+  fitted = TRUE,
+  subset,
+  ...
+)
 }
 \arguments{
 \item{kernelmat}{the kernel matrix computed for all observations}
@@ -45,7 +53,7 @@ The implementation of the solver is a modified version of the popular C++ librar
 heavily relies on the `R`-package \pkg{e1701}.
 }
 \examples{
-\donttest{
+## DO NOT RUN:
 # library(TDA)
 # set.seed(123)
 # foo.data = list()
@@ -58,7 +66,6 @@ heavily relies on the `R`-package \pkg{e1701}.
 #     }
 # GSWkernel = gaus.kernel(foo.data, h =1, dimension = 1,  q = 2)
 # GGKclass = krein.svm(kernelmat = GSWkernel, y = rep(c(1,2), c(20,20)))
-}
 }
 \references{
 \insertRef{loosli2015learning}{kernelTDA}

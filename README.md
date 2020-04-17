@@ -22,7 +22,7 @@ specifically:
     Images](http://www.jmlr.org/papers/volume18/16-337/16-337.pdf)
 
 
-Here you can also find an `R` interface to the C++ libray
+Here you can also find an `R` interface to the C++ library
 [HERA](https://bitbucket.org/grey_narn/hera/src/master/), which contains
 an efficient implementation of the L_p q-Wasserstein distance
 between persistence diagrams.
@@ -31,11 +31,8 @@ between persistence diagrams.
 Finally, this package contains a solver for kernelized Support Vector Machine problems with indefinite kernels, based on the algorithm proposed by [Loosli et al.](https://hal.archives-ouvertes.fr/hal-01593553/document). The implementation is largely based on the C++ library [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/), and on its R interface in the package [e1071](https://CRAN.R-project.org/package=e1071).
 
 
-This package is not yet on CRAN, yet you can install it from this
-repository with:
+This package is now on CRAN, you can install it with:
 
 ``` r
-# install.packages("remotes")
-
-remotes::install_github("tulliapadellini/kernelTDA")
+install.packages("kernelTDA")
 ```
